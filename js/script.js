@@ -42,7 +42,7 @@ let currentActiveIndex = 0;
 
 // AZIONE 3 TRAMITE CLASSLIST.ADD AGGIUNGO ACTIVE ALLA MIA PRIMA IMMAGINE
 myImages[currentActiveIndex].classList.add('active');
-myThumbsImg[0].classList.remove('opacity-50')
+myThumbsImg[0].classList.remove('opacity-50');
 
 /* MILESTONE 3
 
@@ -90,7 +90,6 @@ btnPrev.addEventListener('click', function () {
     myThumbsImg[currentActiveIndex].classList.remove('opacity-50');
 });
 
-
 /*BONUS 1:
 
 Aggiungere il ciclo infinito del carosello. Ovvero se l' immagine attiva è la prima e l'utente clicca la freccia per andare indietro, la miniatura che deve attivarsi sarà l'ultima e viceversa per l'ultima miniatura se l'utente clicca la freccia verso avanti, deve attivarsi la prima immgine.*/
@@ -106,4 +105,3 @@ Consigli del giorno:
 1. Costruiamo del carosello una versione statica contenente un'immagine grande con del testo ben posizionato e una miniatura. Di questa versione statica al momento opportuno commenteremo (oscureremo) alcuni elementi per poterli riprodurre dinamicamente in js. Potremo quindi usarli come "template".
 2. Scriviamo sempre prima per punti il nostro algoritmo in italiano per capire cosa vogliamo fare
 3. Al momento giusto (starà a voi capire quale) rispondete a questa domanda: "Quanti cicli servono?"*/
-
