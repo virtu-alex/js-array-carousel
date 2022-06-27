@@ -22,7 +22,7 @@
 }
 
 .scale{
-    transform: translateY(-25px);
+    transform: scale(1.1);
 }
 
 #next {
