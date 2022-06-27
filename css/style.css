@@ -1,0 +1,41 @@
+#carousel {
+    height: 400px;
+    width: 800px;
+    margin: 50px auto;
+    border: 2px solid black;
+}
+
+#carousel img {
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    display: none;
+    object-fit: cover;
+}
+
+#carousel .active {
+    display: block;
+}
+
+.btn {
+    position: absolute;
+}
+
+#next {
+    top: 50%;
+    right: 5%;
+}
+
+#previous {
+    top: 50%;
+    right: -5%;
+}
+
+#gallery {
+    position: relative;
+}
+
+#thumbnail img{
+    min-width: 0;
+    flex: 1 1 100%;
+}
