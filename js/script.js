@@ -33,30 +33,28 @@ for (let i = 0; i < sources.length; i++) {
     thumbnailContainer.append(thumbImage);
 }
 
-
-
-
-
-
-
-// AZIONE 1.1 CREO UN ARRAY CHE CONTENGA LE IMMAGINI
-
-
 // AZIONE 1.2 RECUPERO TRAMITE QUERYSELECTOR LE IMMAGINI
+
 
 const myImages = document.querySelectorAll('#gallery img');
 
 const templateImg = `<img src="${sources[0]}"/>`
 
+
 // AZIONE 2 CREO UNA VARIABILE D'APPOGGIO CHE VALUTI LA POSIZIONE ATTUALE
+
 
 let currentActiveIndex = 0;
 
+
 // AZIONE 3 TRAMITE CLASSLIST.ADD AGGIUNGO ACTIVE ALLA MIA PRIMA IMMAGINE
+
 
 myImages[currentActiveIndex].classList.add('active');
 
+
 // AZIONE 4 RECUPERO I BOTTONI DALL'HTML
+
 
 const btnNext = document.getElementById('next');
 const btnPrev = document.getElementById('previous');
@@ -85,14 +83,14 @@ btnNext.addEventListener('click', function () {
 
 btnPrev.addEventListener('click', function () {
     myImages[currentActiveIndex].classList.remove('active');
-
+    
     currentActiveIndex--;
     // CONTROLLO  
     if (currentActiveIndex < 0) {
-
+        
         currentActiveIndex = sources.length - 1;
     }
-
+    
     myImages[currentActiveIndex].classList.add('active');
 });
 

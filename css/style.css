@@ -2,7 +2,6 @@
     height: 400px;
     width: 800px;
     margin: 50px auto;
-    border: 2px solid black;
 }
 
 #carousel img {
@@ -15,20 +14,25 @@
 
 #carousel .active {
     display: block;
+    border: 1px solid black;
 }
 
 .btn {
     position: absolute;
 }
 
+.scale{
+    transform: translateY(-25px);
+}
+
 #next {
     top: 50%;
-    right: 5%;
+    right: 10%;
 }
 
 #previous {
     top: 50%;
-    right: -5%;
+    right: 85%;
 }
 
 #gallery {
@@ -36,6 +40,8 @@
 }
 
 #thumbnail img{
+    border-radius: 30px;
+    padding: 10px;
     min-width: 0;
     flex: 1 1 100%;
 }
